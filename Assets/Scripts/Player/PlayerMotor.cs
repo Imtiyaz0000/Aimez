@@ -34,8 +34,8 @@ public class PlayerMotor : MonoBehaviour
         isGrounded = controller.isGrounded;
         if (lerpCrouch)
         {
-            crouchTimer += Time.fixedDeltaTime;
-            float p = crouchTimer / 1;
+            crouchTimer += Time.deltaTime;
+            float p = crouchTimer;
             p *= p;
             if (crouching)
             {

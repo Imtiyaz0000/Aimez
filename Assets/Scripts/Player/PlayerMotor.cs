@@ -39,7 +39,7 @@ public class PlayerMotor : MonoBehaviour
             p *= p;
             if (crouching)
             {
-                controller.height = Mathf.Lerp(controller.height, 1, p);
+                controller.height = Mathf.Lerp(controller.height, 1, p); // linear interpolate for smooth crouching
             }
             else
             {

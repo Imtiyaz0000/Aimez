@@ -12,8 +12,7 @@ jobs:
         projectPath:
           - aimez-build
         unityVersion:
-          - 2019.4.1f1
-          - 2020.2.1f1
+          - 2022.3.47f1
         targetPlatform:
           - StandaloneLinux64 # Build a Linux 64-bit standalone.
           #- iOS # Build an iOS player.
@@ -75,8 +74,7 @@ jobs:
         projectPath:
           - aimez-build
         unityVersion:
-          - 2019.4.1f1
-          - 2020.2.1f1
+          - 2022.3.47f1
         targetPlatform:
          # - StandaloneWindows # Build a Windows 32-bit standalone.
           - StandaloneWindows64 # Build a Windows 64-bit standalone.

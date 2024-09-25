@@ -70,3 +70,14 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Ignore Unity's Library folder
+/aimez-build/Library/
+
+# Ignore other Unity build files
+/aimez-build/Temp/
+#aimez-build/Build/          # Optional: Ignore built artifacts
+/aimez-build/Logs/
+/aimez-build/obj/
+/aimez-build/UserSettings/
+

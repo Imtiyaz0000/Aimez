@@ -84,7 +84,7 @@ jobs:
           projectPath: ${{ matrix.projectPath }}
           unityVersion: ${{ matrix.unityVersion }}
           targetPlatform: ${{ matrix.targetPlatform }}
-          customParameters: '-myParameter myValue -myBoolean -ThirdParameter andItsValue'
+          customParameters: '-myParameter myValue -myBoolean -ThirdParameter andItsValue -WebGLMemorySize 2048 -DevelopmentBuild false -EnableExceptions None'
 
       - uses: actions/upload-artifact@v3
         with:

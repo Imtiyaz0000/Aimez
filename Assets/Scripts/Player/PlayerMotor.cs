@@ -36,7 +36,7 @@ public class PlayerMotor : MonoBehaviour
         {
             crouchTimer += Time.deltaTime;
             float p = crouchTimer;
-            p *= p;
+            p *= p; // quadratic interpolation
             if (crouching)
             {
                 controller.height = Mathf.Lerp(controller.height, 1, p); // linear interpolate for smooth crouching

@@ -42,9 +42,9 @@ jobs:
           targetPlatform: ${{ matrix.targetPlatform }}
           customParameters: '-myParameter myValue -myBoolean -ThirdParameter andItsValue'
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
-          name: Build
+          name: Build-${{ matrix.runs-on }}
           path: build
 
   buildForWindowsBasedPlatforms:
@@ -86,7 +86,7 @@ jobs:
           targetPlatform: ${{ matrix.targetPlatform }}
           customParameters: '-myParameter myValue -myBoolean -ThirdParameter andItsValue -WebGLMemorySize 2048 -DevelopmentBuild false -EnableExceptions None'
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
-          name: Build
+          name: my-artifact-${{ matrix.runs-on }}
           path: build
